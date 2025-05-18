@@ -1,10 +1,11 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const dbConnect = require("./db/dbConnect");
 const UserRouter = require("./routes/UserRouter");
 const PhotoRouter = require("./routes/PhotoRouter");
-const CommentRouter = require("./routes/CommentRouter");
+//const CommentRouter = require("./routes/CommentRouter");
 
 dbConnect();
 
